@@ -18,4 +18,6 @@ int main()
     {
         printf("%d is greater then %d.\n", numTwo, numOne);
     }
+
+    return 0;
 }
