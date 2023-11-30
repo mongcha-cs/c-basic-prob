@@ -2,28 +2,28 @@
 
 int main()
 {
-    int numOne, numTwo, numThree;
+    int num_one, num_two, num_three;
 
     printf("Enter value One: ");
-    scanf("%d", &numOne);
+    scanf("%d", &num_one);
 
     printf("Enter value Two: ");
-    scanf("%d", &numTwo);
+    scanf("%d", &num_two);
 
     printf("Enter value Three: ");
-    scanf("%d", &numThree);
+    scanf("%d", &num_three);
 
-    if (numOne > numTwo && numOne > numThree)
+    if (num_one > num_two && num_one > num_three)
     {
-        printf("%d is greater than %d, %d.\n", numOne, numTwo, numThree);
+        printf("%d is greater than %d, %d.\n", num_one, num_two, num_three);
     }
-    else if (numTwo > numOne && numTwo > numThree)
+    else if (num_two > num_one && num_two > num_three)
     {
-        printf("%d is greater than %d, %d.\n", numTwo, numOne, numThree);
+        printf("%d is greater than %d, %d.\n", num_two, num_one, num_three);
     }
-    else if (numThree > numOne && numThree > numTwo)
+    else if (num_three > num_one && num_three > num_two)
     {
-        printf("%d is greater than %d, %d.\n", numThree, numOne, numTwo);
+        printf("%d is greater than %d, %d.\n", num_three, num_one, num_two);
     }
 
     return 0;
