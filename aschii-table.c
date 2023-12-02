@@ -21,6 +21,11 @@ int main()
     {
         printf("%c is a Small character letter.", myValue);
     }
+    else if (myValue >= 33 && myValue <= 47)
+    {
+        printf("%c is a Operator Sign.", myValue);
+    }
+
     else
     {
         printf("%c is another something number.", myValue);
