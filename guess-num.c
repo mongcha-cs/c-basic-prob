@@ -10,11 +10,11 @@ int main(void)
 
     int choosen_num, chance = 3;
     bool is_loss = true;
-    int lucky_num = rand() % 10 + 1;
+    int lucky_num = rand() % 20 + 1;
 
-    while (chance > 0)
+    do
     {
-        printf("Guess the Lucky number: (%d): ", chance);
+        printf("Guess the Lucky number:(1 to 20) (%d): ", chance);
         scanf("%d", &choosen_num);
 
         if (lucky_num == choosen_num)
@@ -23,11 +23,21 @@ int main(void)
             is_loss = false;
             break;
         }
+        // Provides some Hinds user input value
+        if (choosen_num < lucky_num)
+        {
+            printf("Type a number Bigger then this: %d\n\n", choosen_num);
+        }
+        else
+        {
+            printf("Type a number Smaller then this: %d\n\n", choosen_num);
+        }
+
         chance--;
-    }
+    } while (chance > 0);
     if (is_loss)
     {
-        printf("You have loos. Lucky Number is %d\n", lucky_num);
+        printf("You lost! Lucky Number was: %d\n", lucky_num);
     }
 
     return 0;
