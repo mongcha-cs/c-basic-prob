@@ -5,7 +5,7 @@
 int main()
 {
     int number, sum = 0, temp, remainder;
-    printf("Enter any number: ");
+    printf("Enter your number: ");
     scanf("%d", &number);
 
     temp = number; // number exchange another variable
@@ -17,7 +17,7 @@ int main()
         temp = temp / 10;      // Collect temp number to division number
     }
 
-    printf("Sum of digits number is: %d\n", sum);
+    printf("The Sum of digit number is: %d\n", sum);
 
     return 0;
 }
