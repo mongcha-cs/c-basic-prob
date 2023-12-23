@@ -2,18 +2,18 @@
 
 int main()
 {
-    int remainder, startPalindrome, endPalindrome, temp, sum;
+    int remainder, startNum, endNum, temp, sum;
 
     printf("Check Palindrome number. Type two input value... \n");
 
     printf("Enter First number: ");
-    scanf("%d", &startPalindrome);
+    scanf("%d", &startNum);
 
     printf("Enter Second number: ");
-    scanf("%d", &endPalindrome);
+    scanf("%d", &endNum);
     printf("\n");
 
-    for (int i = startPalindrome; i <= endPalindrome; i++)
+    for (int i = startNum; i <= endNum; i++)
     {
         temp = i;
         sum = 0;
