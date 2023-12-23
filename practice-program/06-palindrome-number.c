@@ -5,7 +5,7 @@ int main(int argc, char const *argv[])
 {
     int palindromeNumber, remainder, temp, sum = 0;
 
-    printf("Enter any number: ");
+    printf("Check Palindrome Number: ");
     scanf("%d", &palindromeNumber);
 
     palindromeNumber = abs(palindromeNumber); // All input number convert to positive number
@@ -22,11 +22,11 @@ int main(int argc, char const *argv[])
     // Now begin Palindrome number part
     if (palindromeNumber == sum)
     {
-        printf("%d is a Palindrome Number.\n", sum);
+        printf("%d is a Palindrome Number.\n", palindromeNumber);
     }
     else
     {
-        printf("%d is not Palindrome Number.\n", sum);
+        printf("%d is not Palindrome Number.\n", palindromeNumber);
     }
 
     return 0;
