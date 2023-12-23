@@ -8,7 +8,7 @@ int main(int argc, char const *argv[])
     printf("Enter any number: ");
     scanf("%d", &palindromeNumber);
 
-    palindromeNumber = abs(palindromeNumber); // All input number going to convert positive number
+    palindromeNumber = abs(palindromeNumber); // All input number convert to positive number
 
     temp = palindromeNumber;
 
