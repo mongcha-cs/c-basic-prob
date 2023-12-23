@@ -13,7 +13,6 @@ int main()
     scanf("%d", &endPalindrome);
     printf("\n");
 
-    // for (startPalindrome = 0; startPalindrome <= endPalindrome; startPalindrome++)
     for (int i = startPalindrome; i <= endPalindrome; i++)
     {
         temp = i;
