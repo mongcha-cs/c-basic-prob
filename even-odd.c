@@ -5,6 +5,7 @@ int main()
     long long int myNum;
     // myNum = 9876543456789;
     // myNum = 98765434567898765;
+    printf("Check even odd number: ");
     printf("Enter the value: ");
     scanf("%lld", &myNum);
 
