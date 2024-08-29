@@ -1,4 +1,6 @@
 
+// Rectangle formula A = l × w.
+
 #include <stdio.h>
 
 int main()
