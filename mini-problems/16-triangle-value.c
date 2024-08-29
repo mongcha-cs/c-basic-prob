@@ -2,7 +2,7 @@
 
 int main()
 {
-    float base, height, area;
+    float area, base, height;
 
     printf("Enter Height value: ");
     scanf("%f", &height);
@@ -11,7 +11,7 @@ int main()
     scanf("%f", &base);
 
     // Triangle formula = A = 1/2 * h * h
-    area = (float)1 / 2 * height * base;
+    area = (float)0.5 * height * base;
 
     printf("The Triangle value is: %.2f\n", area);
 
