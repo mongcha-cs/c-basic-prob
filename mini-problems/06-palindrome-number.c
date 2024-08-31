@@ -1,32 +1,35 @@
+
+// PALINDROME NUMBER PROGRAM. If Original input number and reverse input number are same then it is a PALINDROME number. e.g 121, 333, 434 etc.
+
 #include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char const *argv[])
 {
-    int palindromeNumber, remainder, temp, sum = 0;
+    int userNum, remainder, temp, sum = 0;
 
     printf("Check Palindrome Number: ");
-    scanf("%d", &palindromeNumber);
+    scanf("%d", &userNum);
 
-    palindromeNumber = abs(palindromeNumber); // All input number convert to positive number
+    userNum = abs(userNum); // All input number convert to Absolute number
 
-    temp = palindromeNumber;
+    temp = userNum; // Variable value switch
 
     while (temp != 0)
     {
         remainder = temp % 10;
         sum = sum * 10 + remainder;
-        temp = temp / 10;
+        temp /= 10;
     }
 
     // Now begin Palindrome number part
-    if (palindromeNumber == sum)
+    if (userNum == sum)
     {
-        printf("%d is a Palindrome Number.\n", palindromeNumber);
+        printf("%d is a Palindrome Number.\n", userNum);
     }
     else
     {
-        printf("%d is not Palindrome Number.\n", palindromeNumber);
+        printf("%d is not Palindrome Number.\n", userNum);
     }
 
     return 0;
