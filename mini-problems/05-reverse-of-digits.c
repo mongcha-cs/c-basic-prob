@@ -1,19 +1,20 @@
+
+// INPUT SUM OF DIGITS REVERSE PROGRAM
+
 #include <stdio.h>
 
 int main(int argc, char const *argv[])
 {
-    int reverseNumber, remainder, temp, sum = 0;
+    int remainder, userNum, sum = 0;
 
     printf("Enter your Reverse Number: ");
-    scanf("%d", &reverseNumber);
+    scanf("%d", &userNum);
 
-    temp = reverseNumber;
-
-    while (temp != 0)
+    while (userNum != 0)
     {
-        remainder = temp % 10;
+        remainder = userNum % 10;
         sum = sum * 10 + remainder;
-        temp = temp / 10;
+        userNum /= 10;
     }
 
     printf("Reverse number is: %d", sum);
