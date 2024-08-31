@@ -1,23 +1,22 @@
-#include <stdio.h>
 
-// If user input number like - 123, The program going to work (1+2+3). That's the about this program.
+// Sum of Input Digits program
+
+#include <stdio.h>
 
 int main()
 {
-    int number, sum = 0, temp, remainder;
+    int userNum, sum = 0, temp, remainder;
     printf("Enter your number: ");
-    scanf("%d", &number);
+    scanf("%d", &userNum);
 
-    temp = number; // number exchange another variable
-
-    while (temp != 0)
+    while (userNum != 0)
     {
-        remainder = temp % 10; // Collect remainder/mod number from temp number
-        sum = sum + remainder; // Store sum variable with sum add temp mod(%) number
-        temp = temp / 10;      // Collect temp number to division number
+        remainder = userNum % 10;
+        sum += remainder;
+        userNum /= 10;
     }
 
-    printf("The Sum of digit number is: %d\n", sum);
+    printf("The Sum of Digit is: %d\n", sum);
 
     return 0;
 }
