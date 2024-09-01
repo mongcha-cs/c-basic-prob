@@ -6,30 +6,31 @@
 
 int main(int argc, char const *argv[])
 {
-    int userNum, remainder, temp, sum = 0;
+    float userNum;
+    int remainder, tempSwap, sum = 0;
 
+    printf("Check Palindrome Number. Enter only positive number!\n\n");
     printf("Check Palindrome Number: ");
-    scanf("%d", &userNum);
+    scanf("%f", &userNum);
 
-    userNum = abs(userNum); // All input number convert to Absolute number
+    tempSwap = abs(userNum); // All input number convert to Absolute number
+    int i = tempSwap;        // This swap value work, bring only positive number
 
-    temp = userNum; // Variable value switch
-
-    while (temp != 0)
+    while (i != 0)
     {
-        remainder = temp % 10;
+        remainder = i % 10;
         sum = sum * 10 + remainder;
-        temp /= 10;
+        i /= 10;
     }
 
     // Check Palindrome number
-    if (userNum == sum)
+    if (tempSwap == sum)
     {
-        printf("\n%d is Palindrome Number.\n", userNum);
+        printf("\n%d is The Palindrome Number.\n", tempSwap);
     }
     else
     {
-        printf("\n%d is not Palindrome Number.\n", userNum);
+        printf("\n%d is not The Palindrome Number.\n", tempSwap);
     }
 
     return 0;
