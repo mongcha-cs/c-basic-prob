@@ -1,37 +1,51 @@
 
-// Armstrong Number program.
-// * If user input number '153' then (1)3+(5)3+(3)3 = 153 then it's called Armstrong number. In other words, each single value 'root to the power' equal input number, then it called Armstrong number.
+/*
+ ! Armstrong Number program.
+ * An Armstrong number of order n is a number in which each digit is raised to the power of n, and the sum equals the original number.
+ */
 
 #include <stdio.h>
-#include <stdlib.h>
-int main()
+#include <math.h>
+
+int main(int argc, char const *argv[])
 {
+    int userNum, originalValue, temp, n = 0, remainder, sum = 0;
 
-    int remainder, temp, sum = 0;
-    float userNum;
+    printf("Check Armstrong number. Enter only positive number!\n\n");
+    printf("Enter your number: ");
+    scanf("%d", &userNum);
 
-    printf("Check Armstrong number: ");
-    scanf("%f", &userNum);
-    printf("\n");
+    // Convert the input to an absolute integer value
+    originalValue = abs(userNum);
 
-    int i = abs(userNum); // Input convert to Absolute number
+    // Calculate the number of digits in the input number
+    temp = originalValue;
+    while (temp != 0)
+    {
+        temp /= 10;
+        n++;
+    }
 
-    temp = i;
+    // Display user digits number
+    printf("User Input digit is: %d\n\n", n);
 
+    // Calculate the sum of the powers of the digits
+    temp = originalValue;
     while (temp != 0)
     {
         remainder = temp % 10;
-        sum = sum + remainder * remainder * remainder;
+        sum += pow(remainder, n);
         temp /= 10;
     }
 
-    if (userNum == sum)
+    // Check if the input number is equal to the sum of the powers of its digits
+    if (sum == originalValue)
     {
-        printf("%d is an Armstrong number.\n", i);
+        printf("%d is an Armstrong Number.\n", originalValue);
     }
     else
     {
-        printf("%d is not an Armstrong number\n", i);
+        printf("%d is Not an Armstrong Number.\n", originalValue);
     }
 
     return 0;
