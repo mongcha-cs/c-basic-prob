@@ -10,7 +10,7 @@ int main(int argc, char const *argv[])
     int userNum, remainder, temp, sum;
     int foundPalindromeNum = 0; // Flag to check if a palindrome number is found
 
-    printf("Print Palindrome Number. Enter only Positive number!\n\n");
+    printf("Print Palindrome Number. Only Enter Positive number!\n\n");
 
     printf("Enter First Number: ");
     scanf("%f", &firstNum);
@@ -19,7 +19,8 @@ int main(int argc, char const *argv[])
     scanf("%f", &lastNum);
     printf("\n");
 
-    firstNum = abs(firstNum), lastNum = abs(lastNum); // All input number convert to Absolute number
+    // All input number convert to Absolute number
+    firstNum = abs(firstNum), lastNum = abs(lastNum);
 
     // Iterate through each number in the range
     for (int i = firstNum; i <= lastNum; i++)
