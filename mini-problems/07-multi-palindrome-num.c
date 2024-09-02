@@ -60,11 +60,11 @@ int main(int argc, char const *argv[])
     // If no palindrome numbers are found in the range
     if (!foundPalindromeNum)
     {
-        printf("There are no palindrome numbers found between %d and %d.\n", firstNum, lastNum);
+        printf("There are no palindrome numbers found. Between %d to %d.\n", firstNum, lastNum);
     }
     else
     {
-        printf("\nThese are the palindrome numbers between %d and %d.\n", firstNum, lastNum);
+        printf("\nThese are the palindrome numbers found. Between %d to %d.\n", firstNum, lastNum);
     }
 
     return 0;
